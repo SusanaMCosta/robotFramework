@@ -17,7 +17,7 @@ class ContaLibrary():
 conta = ContaLibrary()
 conta.abrir_conta()
 conta.deposita(100.00)
-print(conta.obter_saldo)
+print(conta.obter_saldo())
 
 # conta = ContaLibrary()
 # conta.abrir_conta()
