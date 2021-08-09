@@ -14,7 +14,7 @@ class ContaLibrary():
         self.saldo -= valor
         self.saldo -= 2.0
 
-#conta = ContaLibrary()
-#conta.abrir_conta()
-#conta.deposita(100.00)
-#print(conta.obter_saldo())
+conta = ContaLibrary()
+conta.abrir_conta()
+conta.deposita(100.00)
+print(conta.obter_saldo())
