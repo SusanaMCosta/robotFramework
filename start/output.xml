@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.8.10 on linux)" generated="20210809 17:03:36.842" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.8.10 on linux)" generated="20210810 08:50:52.865" rpa="false" schemaversion="2">
 <suite id="s1" name="Conta" source="/home/susana/automação/RobotXpert/start/conta.robot">
 <test id="s1-t1" name="Quando abro uma nova conta deve retornar saldo ZERADO">
 <kw name="Abrir Conta" library="ContaLibrary">
-<status status="PASS" starttime="20210809 17:03:36.870" endtime="20210809 17:03:36.870"/>
+<status status="PASS" starttime="20210810 08:50:52.888" endtime="20210810 08:50:52.888"/>
 </kw>
 <kw name="Obter Saldo" library="ContaLibrary">
 <var>${saldo_final}</var>
-<msg timestamp="20210809 17:03:36.870" level="INFO">${saldo_final} = 0.0</msg>
-<status status="PASS" starttime="20210809 17:03:36.870" endtime="20210809 17:03:36.870"/>
+<msg timestamp="20210810 08:50:52.888" level="INFO">${saldo_final} = 0.0</msg>
+<status status="PASS" starttime="20210810 08:50:52.888" endtime="20210810 08:50:52.888"/>
 </kw>
 <kw name="Convert To Number" library="BuiltIn">
 <var>${saldo_esperado}</var>
 <arg>0.0</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<msg timestamp="20210809 17:03:36.871" level="INFO">${saldo_esperado} = 0.0</msg>
-<status status="PASS" starttime="20210809 17:03:36.871" endtime="20210809 17:03:36.871"/>
+<msg timestamp="20210810 08:50:52.889" level="INFO">${saldo_esperado} = 0.0</msg>
+<status status="PASS" starttime="20210810 08:50:52.888" endtime="20210810 08:50:52.889"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>${saldo_final}</arg>
-<arg>0.0</arg>
+<arg>${saldo_esperado}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<msg timestamp="20210809 17:03:36.871" level="INFO">Argument types are:
-&lt;class 'float'&gt;
-&lt;type 'unicode'&gt;</msg>
-<msg timestamp="20210809 17:03:36.872" level="FAIL">0.0 (float) != 0.0 (string)</msg>
-<status status="FAIL" starttime="20210809 17:03:36.871" endtime="20210809 17:03:36.872"/>
+<status status="PASS" starttime="20210810 08:50:52.889" endtime="20210810 08:50:52.889"/>
 </kw>
-<status status="FAIL" starttime="20210809 17:03:36.869" endtime="20210809 17:03:36.872">0.0 (float) != 0.0 (string)</status>
+<status status="PASS" starttime="20210810 08:50:52.887" endtime="20210810 08:50:52.889"/>
 </test>
 <doc>Suite para testar a classe ContaLibrary</doc>
-<status status="FAIL" starttime="20210809 17:03:36.843" endtime="20210809 17:03:36.873"/>
+<status status="PASS" starttime="20210810 08:50:52.867" endtime="20210810 08:50:52.890"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Conta">Conta</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Conta">Conta</stat>
 </suite>
 </statistics>
 <errors>

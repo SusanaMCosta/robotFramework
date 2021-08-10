@@ -7,8 +7,7 @@ Library         ContaLibrary.py
 Quando abro uma nova conta deve retornar saldo ZERADO
     Abrir Conta
 
-    ${saldo_final}      Obter Saldo
-    ${saldo_esperado}   Convert To Number   0.0
+    ${saldo_final}     Obter Saldo
+    ${saldo_esperado}  Convert To Number   0.0
 
-    Should Be Equal     ${saldo_final}      0.0s
-
+    Should Be Equal    ${saldo_final}      ${saldo_esperado}
