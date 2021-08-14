@@ -1,76 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.8.10 on linux)" generated="20210814 16:40:41.980" rpa="false" schemaversion="2">
-<suite id="s1" name="Repeticao" source="/home/susana/automação/RobotXpert/start/repeticao.robot">
-<test id="s1-t1" name="Meu primeiro Loop">
-<for flavor="IN">
-<var>${item}</var>
-<value>@{AVENGERS}</value>
-<iter>
-<var name="${item}">Iroman</var>
-<if>
-<branch type="IF" condition="$item == 'Viuva Negra'">
+<robot generator="Robot 4.1 (Python 3.8.10 on linux)" generated="20210814 16:51:03.252" rpa="false" schemaversion="2">
+<suite id="s1" name="Dicionarios" source="/home/susana/automação/RobotXpert/start/dicionarios.robot">
+<test id="s1-t1" name="Obtendo valores de um dicionario">
 <kw name="Log To Console" library="BuiltIn">
-<arg>Obtendo o vingador: ${item}</arg>
+<arg>${CARRO.nome}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20210814 16:40:42.004" endtime="20210814 16:40:42.004"/>
+<status status="PASS" starttime="20210814 16:51:03.274" endtime="20210814 16:51:03.274"/>
 </kw>
-<status status="NOT RUN" starttime="20210814 16:40:42.004" endtime="20210814 16:40:42.004"/>
-</branch>
-<status status="PASS" starttime="20210814 16:40:42.001" endtime="20210814 16:40:42.004"/>
-</if>
-<status status="PASS" starttime="20210814 16:40:42.001" endtime="20210814 16:40:42.004"/>
-</iter>
-<iter>
-<var name="${item}">Hulk</var>
-<if>
-<branch type="IF" condition="$item == 'Viuva Negra'">
-<kw name="Log To Console" library="BuiltIn">
-<arg>Obtendo o vingador: ${item}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.005"/>
-</kw>
-<status status="NOT RUN" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.005"/>
-</branch>
-<status status="PASS" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.005"/>
-</if>
-<status status="PASS" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.005"/>
-</iter>
-<iter>
-<var name="${item}">Viuva Negra</var>
-<if>
-<branch type="IF" condition="$item == 'Viuva Negra'">
-<kw name="Log To Console" library="BuiltIn">
-<arg>Obtendo o vingador: ${item}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.005"/>
-</kw>
-<status status="PASS" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.005"/>
-</branch>
-<status status="PASS" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.006"/>
-</if>
-<status status="PASS" starttime="20210814 16:40:42.005" endtime="20210814 16:40:42.006"/>
-</iter>
-<iter>
-<var name="${item}">Cap</var>
-<if>
-<branch type="IF" condition="$item == 'Viuva Negra'">
-<kw name="Log To Console" library="BuiltIn">
-<arg>Obtendo o vingador: ${item}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20210814 16:40:42.006" endtime="20210814 16:40:42.006"/>
-</kw>
-<status status="NOT RUN" starttime="20210814 16:40:42.006" endtime="20210814 16:40:42.006"/>
-</branch>
-<status status="PASS" starttime="20210814 16:40:42.006" endtime="20210814 16:40:42.006"/>
-</if>
-<status status="PASS" starttime="20210814 16:40:42.006" endtime="20210814 16:40:42.006"/>
-</iter>
-<status status="PASS" starttime="20210814 16:40:42.001" endtime="20210814 16:40:42.006"/>
-</for>
-<status status="PASS" starttime="20210814 16:40:42.001" endtime="20210814 16:40:42.006"/>
+<status status="PASS" starttime="20210814 16:51:03.273" endtime="20210814 16:51:03.275"/>
 </test>
-<doc>Laços de Repetição</doc>
-<status status="PASS" starttime="20210814 16:40:41.981" endtime="20210814 16:40:42.007"/>
+<doc>Conhecendo os dicionários do Robot (Nativo do Pyhton)</doc>
+<status status="PASS" starttime="20210814 16:51:03.253" endtime="20210814 16:51:03.275"/>
 </suite>
 <statistics>
 <total>
@@ -79,7 +19,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Repeticao">Repeticao</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dicionarios">Dicionarios</stat>
 </suite>
 </statistics>
 <errors>
