@@ -1,0 +1,12 @@
+{"level":30,"time":"2021-08-16T16:06:24.693Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Listening on 57593"}
+{"level":30,"time":"2021-08-16T16:06:25.055Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-16T16:06:25.064Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-16T16:06:25.232Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-16T16:06:25.234Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-16T16:06:43.035Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Retrieved text for element css=aside strong containing Administrador"}
+{"level":30,"time":"2021-08-16T16:06:43.147Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-16T16:06:43.147Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-16T16:06:43.147Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-16T16:06:43.164Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-16T16:06:43.164Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-16T16:06:43.164Z","pid":21652,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
