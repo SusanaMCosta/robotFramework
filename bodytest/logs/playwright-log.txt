@@ -1,11 +1,82 @@
-{"level":30,"time":"2021-08-23T00:00:51.716Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Listening on 54257"}
-{"level":30,"time":"2021-08-23T00:00:52.150Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-08-23T00:00:52.161Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
-{"level":30,"time":"2021-08-23T00:00:52.373Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
-{"level":30,"time":"2021-08-23T00:00:52.381Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
-{"level":30,"time":"2021-08-23T00:00:55.226Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
-{"level":30,"time":"2021-08-23T00:00:55.226Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
-{"level":30,"time":"2021-08-23T00:00:55.226Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
-{"level":30,"time":"2021-08-23T00:00:55.264Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
-{"level":30,"time":"2021-08-23T00:00:55.264Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
-{"level":30,"time":"2021-08-23T00:00:55.264Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:13.489Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Listening on 56921"}
+{"level":30,"time":"2021-08-23T00:35:13.844Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-23T00:35:13.854Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:14.029Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-23T00:35:14.029Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+=========================== logs ===========================
+navigating to "https://bodytest-web-susana.herokuapp.com/", waiting until "load"
+============================================================
+    at /home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:26505:49
+    at step (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25919:23)
+    at Object.next (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25900:53)
+    at fulfilled (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25891:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at Object.exists (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:25829:15)
+    at /home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22968:41
+    at step (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22915:23)
+    at Object.next (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22896:53)
+    at /home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22890:71
+    at new Promise (<anonymous>)
+    at __webpack_modules__../node/playwright-wrapper/browser-control.ts.__awaiter (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22886:12)
+    at takeScreenshot (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:22942:12)
+    at PlaywrightServer.<anonymous> (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:24119:50)
+    at step (/home/susana/.local/lib/python3.8/site-packages/Browser/wrapper/index.js:24072:23)
+=============================================================
+{"level":30,"time":"2021-08-23T00:35:24.057Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:24.066Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:24.435Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-23T00:35:24.446Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:24.606Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-23T00:35:24.607Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:28.063Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:28.064Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:28.064Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:28.078Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:28.078Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:28.078Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:28.461Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-23T00:35:28.475Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:28.640Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-23T00:35:28.640Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:31.281Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:31.281Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:31.281Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:31.302Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:31.302Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:31.302Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:31.684Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-23T00:35:31.691Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:31.883Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-23T00:35:31.883Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:34.792Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:34.792Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:34.793Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:34.811Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:34.811Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:34.812Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:35.270Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-23T00:35:35.276Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:35.446Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-23T00:35:35.446Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:38.089Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:38.089Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:38.089Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:38.107Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:38.107Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:38.107Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:38.494Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-23T00:35:38.504Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:38.678Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-23T00:35:38.679Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:41.301Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:41.301Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:41.301Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:35:41.318Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:35:41.318Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:35:41.318Z","pid":23167,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}

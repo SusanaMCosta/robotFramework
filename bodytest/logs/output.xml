@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.8.10 on linux)" generated="20210822 21:00:51.206" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.8.10 on linux)" generated="20210822 21:35:13.066" rpa="false" schemaversion="2">
 <suite id="s1" name="Login" source="/home/susana/automação/RobotXpert/bodytest/tests/login.robot">
-<test id="s1-t1" name="Email e senha não informados">
+<test id="s1-t1" name="Login do Administrador">
+<kw name="Go To Login Page" library="auth">
 <kw name="New Browser" library="Browser">
 <arg>chromium</arg>
 <arg>False</arg>
@@ -9,9 +10,9 @@
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210822 21:00:51.846" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/susana/automa\u00e7\u00e3o/RobotXpert/bodytest/logs/browser/traces/2a2e88e8-c8e5-4f30-9c99-efcc4422be39"}</msg>
-<msg timestamp="20210822 21:00:52.147" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/susana/automação/RobotXpert/bodytest/logs/browser/traces/2a2e88e8-c8e5-4f30-9c99-efcc4422be39"}</msg>
-<status status="PASS" starttime="20210822 21:00:51.844" endtime="20210822 21:00:52.147"/>
+<msg timestamp="20210822 21:35:13.536" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/susana/automa\u00e7\u00e3o/RobotXpert/bodytest/logs/browser/traces/84bd81c2-278b-44f9-8cd4-b06334c32fac"}</msg>
+<msg timestamp="20210822 21:35:13.842" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/susana/automação/RobotXpert/bodytest/logs/browser/traces/84bd81c2-278b-44f9-8cd4-b06334c32fac"}</msg>
+<status status="PASS" starttime="20210822 21:35:13.536" endtime="20210822 21:35:13.842"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://bodytest-web-susana.herokuapp.com/</arg>
@@ -20,44 +21,226 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210822 21:00:54.897" level="INFO">Successfully initialized new page object and opened url: https://bodytest-web-susana.herokuapp.com/</msg>
-<msg timestamp="20210822 21:00:54.898" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20210822 21:00:52.148" endtime="20210822 21:00:54.898"/>
+<msg timestamp="20210822 21:35:24.047" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20210822 21:35:24.052" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+=========================== logs ===========================
+navigating to "https://bodytest-web-susana.herokuapp.com/", waiting until "load"
+============================================================</msg>
+<status status="FAIL" starttime="20210822 21:35:13.842" endtime="20210822 21:35:24.052"/>
 </kw>
+<status status="FAIL" starttime="20210822 21:35:13.535" endtime="20210822 21:35:24.053"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>admin@bodytest.com</arg>
+<arg>pwd123</arg>
+<status status="NOT RUN" starttime="20210822 21:35:24.053" endtime="20210822 21:35:24.053"/>
+</kw>
+<kw name="User Should Be Logged In" library="nav">
+<arg>Administrador</arg>
+<status status="NOT RUN" starttime="20210822 21:35:24.053" endtime="20210822 21:35:24.053"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" starttime="20210822 21:35:24.053" endtime="20210822 21:35:24.053"/>
+</kw>
+<status status="FAIL" starttime="20210822 21:35:13.533" endtime="20210822 21:35:24.054">TimeoutError: page.goto: Timeout 10000ms exceeded.
+=========================== logs ===========================
+navigating to "https://bodytest-web-susana.herokuapp.com/", waiting until "load"
+============================================================</status>
+</test>
+<test id="s1-t2" name="Senha incorreta">
+<kw name="Go To Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 21:35:24.101" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/susana/automa\u00e7\u00e3o/RobotXpert/bodytest/logs/browser/traces/36e4906b-77ff-41b0-b92e-0b2392900c56"}</msg>
+<msg timestamp="20210822 21:35:24.433" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/susana/automação/RobotXpert/bodytest/logs/browser/traces/36e4906b-77ff-41b0-b92e-0b2392900c56"}</msg>
+<status status="PASS" starttime="20210822 21:35:24.100" endtime="20210822 21:35:24.434"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://bodytest-web-susana.herokuapp.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210822 21:35:27.059" level="INFO">Successfully initialized new page object and opened url: https://bodytest-web-susana.herokuapp.com/</msg>
+<msg timestamp="20210822 21:35:27.060" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210822 21:35:24.434" endtime="20210822 21:35:27.061"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:24.099" endtime="20210822 21:35:27.062"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>admin@bodytest.com</arg>
+<arg>pwd</arg>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name=email]</arg>
-<arg>${EMPTY}</arg>
+<arg>${email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210822 21:00:54.903" level="INFO">Fills the text '' in the given field.</msg>
-<status status="PASS" starttime="20210822 21:00:54.899" endtime="20210822 21:00:55.001"/>
+<msg timestamp="20210822 21:35:27.070" level="INFO">Fills the text 'admin@bodytest.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:27.067" endtime="20210822 21:35:27.142"/>
 </kw>
 <kw name="Fill Text" library="Browser">
-<arg>css=input[name=password]</arg>
-<arg>${EMPTY}</arg>
+<arg>input[placeholder*=senha]</arg>
+<arg>${pass}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210822 21:00:55.003" level="INFO">Fills the text '' in the given field.</msg>
-<status status="PASS" starttime="20210822 21:00:55.002" endtime="20210822 21:00:55.047"/>
+<msg timestamp="20210822 21:35:27.142" level="INFO">Fills the text 'pwd' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:27.142" endtime="20210822 21:35:27.168"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Entrar</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210822 21:00:55.047" endtime="20210822 21:00:55.152"/>
+<status status="PASS" starttime="20210822 21:35:27.168" endtime="20210822 21:35:27.238"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:27.063" endtime="20210822 21:35:27.238"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
-<arg>css=form span &gt;&gt; text=O e-mail é obrigatório</arg>
+<arg>css=.Toastify__toast-body &gt;&gt; text=Usuário ou senha inválido</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210822 21:00:55.188" level="INFO">Wait for Element with selector: css=form span &gt;&gt; text=O e-mail é obrigatório</msg>
-<status status="PASS" starttime="20210822 21:00:55.153" endtime="20210822 21:00:55.189"/>
+<msg timestamp="20210822 21:35:28.056" level="INFO">Wait for Element with selector: css=.Toastify__toast-body &gt;&gt; text=Usuário ou senha inválido</msg>
+<status status="PASS" starttime="20210822 21:35:27.239" endtime="20210822 21:35:28.056"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:24.095" endtime="20210822 21:35:28.056"/>
+</test>
+<test id="s1-t3" name="Email incorreto">
+<kw name="Go To Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 21:35:28.126" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/susana/automa\u00e7\u00e3o/RobotXpert/bodytest/logs/browser/traces/5878396b-799b-41a5-a1d9-a65bc1f0503e"}</msg>
+<msg timestamp="20210822 21:35:28.459" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/susana/automação/RobotXpert/bodytest/logs/browser/traces/5878396b-799b-41a5-a1d9-a65bc1f0503e"}</msg>
+<status status="PASS" starttime="20210822 21:35:28.125" endtime="20210822 21:35:28.459"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://bodytest-web-susana.herokuapp.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210822 21:35:31.085" level="INFO">Successfully initialized new page object and opened url: https://bodytest-web-susana.herokuapp.com/</msg>
+<msg timestamp="20210822 21:35:31.085" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210822 21:35:28.459" endtime="20210822 21:35:31.086"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:28.125" endtime="20210822 21:35:31.087"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>admin$bodytest.com</arg>
+<arg>pwd123</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name=email]</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:31.096" level="INFO">Fills the text 'admin$bodytest.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:31.092" endtime="20210822 21:35:31.168"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>input[placeholder*=senha]</arg>
+<arg>${pass}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:31.169" level="INFO">Fills the text 'pwd123' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:31.168" endtime="20210822 21:35:31.190"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 21:35:31.191" endtime="20210822 21:35:31.255"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:31.089" endtime="20210822 21:35:31.256"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=form span &gt;&gt; text=Informe um e-mail válido</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 21:35:31.271" level="INFO">Wait for Element with selector: css=form span &gt;&gt; text=Informe um e-mail válido</msg>
+<status status="PASS" starttime="20210822 21:35:31.256" endtime="20210822 21:35:31.271"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:28.121" endtime="20210822 21:35:31.271"/>
+</test>
+<test id="s1-t4" name="Senha não informada">
+<kw name="Go To Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 21:35:31.343" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/susana/automa\u00e7\u00e3o/RobotXpert/bodytest/logs/browser/traces/2eb32718-454c-42b8-97b7-927f9d4ee244"}</msg>
+<msg timestamp="20210822 21:35:31.682" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/susana/automação/RobotXpert/bodytest/logs/browser/traces/2eb32718-454c-42b8-97b7-927f9d4ee244"}</msg>
+<status status="PASS" starttime="20210822 21:35:31.342" endtime="20210822 21:35:31.682"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://bodytest-web-susana.herokuapp.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210822 21:35:34.578" level="INFO">Successfully initialized new page object and opened url: https://bodytest-web-susana.herokuapp.com/</msg>
+<msg timestamp="20210822 21:35:34.579" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210822 21:35:31.683" endtime="20210822 21:35:34.580"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:31.342" endtime="20210822 21:35:34.581"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>admin@bodytest.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name=email]</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:34.606" level="INFO">Fills the text 'admin@bodytest.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:34.604" endtime="20210822 21:35:34.657"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>input[placeholder*=senha]</arg>
+<arg>${pass}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:34.658" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:34.657" endtime="20210822 21:35:34.687"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 21:35:34.687" endtime="20210822 21:35:34.754"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:34.596" endtime="20210822 21:35:34.754"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=form span &gt;&gt; text=A senha é obrigatória</arg>
@@ -66,26 +249,172 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210822 21:00:55.211" level="INFO">Wait for Element with selector: css=form span &gt;&gt; text=A senha é obrigatória</msg>
-<status status="PASS" starttime="20210822 21:00:55.189" endtime="20210822 21:00:55.212"/>
+<msg timestamp="20210822 21:35:34.778" level="INFO">Wait for Element with selector: css=form span &gt;&gt; text=A senha é obrigatória</msg>
+<status status="PASS" starttime="20210822 21:35:34.755" endtime="20210822 21:35:34.778"/>
 </kw>
-<tag>temp</tag>
-<status status="PASS" starttime="20210822 21:00:51.840" endtime="20210822 21:00:55.212"/>
+<status status="PASS" starttime="20210822 21:35:31.336" endtime="20210822 21:35:34.778"/>
+</test>
+<test id="s1-t5" name="Email não informado">
+<kw name="Go To Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 21:35:34.863" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/susana/automa\u00e7\u00e3o/RobotXpert/bodytest/logs/browser/traces/48ebfe90-8e96-4891-ad93-2e216f69fe4a"}</msg>
+<msg timestamp="20210822 21:35:35.266" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/susana/automação/RobotXpert/bodytest/logs/browser/traces/48ebfe90-8e96-4891-ad93-2e216f69fe4a"}</msg>
+<status status="PASS" starttime="20210822 21:35:34.862" endtime="20210822 21:35:35.266"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://bodytest-web-susana.herokuapp.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210822 21:35:37.896" level="INFO">Successfully initialized new page object and opened url: https://bodytest-web-susana.herokuapp.com/</msg>
+<msg timestamp="20210822 21:35:37.896" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210822 21:35:35.267" endtime="20210822 21:35:37.899"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:34.861" endtime="20210822 21:35:37.900"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>${EMPTY}</arg>
+<arg>pwd123</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name=email]</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:37.918" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:37.916" endtime="20210822 21:35:37.985"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>input[placeholder*=senha]</arg>
+<arg>${pass}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:37.985" level="INFO">Fills the text 'pwd123' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:37.985" endtime="20210822 21:35:38.000"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 21:35:38.000" endtime="20210822 21:35:38.069"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:37.902" endtime="20210822 21:35:38.069"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=form span &gt;&gt; text=O e-mail é obrigatório</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 21:35:38.084" level="INFO">Wait for Element with selector: css=form span &gt;&gt; text=O e-mail é obrigatório</msg>
+<status status="PASS" starttime="20210822 21:35:38.069" endtime="20210822 21:35:38.084"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:34.858" endtime="20210822 21:35:38.084"/>
+</test>
+<test id="s1-t6" name="Email e senha não informados">
+<kw name="Go To Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 21:35:38.152" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/home/susana/automa\u00e7\u00e3o/RobotXpert/bodytest/logs/browser/traces/01fe631b-76c3-4131-a304-e88bfbe0241e"}</msg>
+<msg timestamp="20210822 21:35:38.492" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/home/susana/automação/RobotXpert/bodytest/logs/browser/traces/01fe631b-76c3-4131-a304-e88bfbe0241e"}</msg>
+<status status="PASS" starttime="20210822 21:35:38.151" endtime="20210822 21:35:38.493"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://bodytest-web-susana.herokuapp.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210822 21:35:41.156" level="INFO">Successfully initialized new page object and opened url: https://bodytest-web-susana.herokuapp.com/</msg>
+<msg timestamp="20210822 21:35:41.156" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20210822 21:35:38.493" endtime="20210822 21:35:41.156"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:38.151" endtime="20210822 21:35:41.157"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>${EMPTY}</arg>
+<arg>${EMPTY}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name=email]</arg>
+<arg>${email}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:41.162" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:41.161" endtime="20210822 21:35:41.201"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>input[placeholder*=senha]</arg>
+<arg>${pass}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 21:35:41.201" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20210822 21:35:41.201" endtime="20210822 21:35:41.219"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Entrar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 21:35:41.219" endtime="20210822 21:35:41.274"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:41.158" endtime="20210822 21:35:41.274"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=form span &gt;&gt; text=O e-mail é obrigatório</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 21:35:41.288" level="INFO">Wait for Element with selector: css=form span &gt;&gt; text=O e-mail é obrigatório</msg>
+<status status="PASS" starttime="20210822 21:35:41.274" endtime="20210822 21:35:41.288"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=form span &gt;&gt; text=A senha é obrigatória</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 21:35:41.297" level="INFO">Wait for Element with selector: css=form span &gt;&gt; text=A senha é obrigatória</msg>
+<status status="PASS" starttime="20210822 21:35:41.289" endtime="20210822 21:35:41.297"/>
+</kw>
+<status status="PASS" starttime="20210822 21:35:38.148" endtime="20210822 21:35:41.298"/>
 </test>
 <doc>Suite de testes de Login do Administrador</doc>
-<status status="PASS" starttime="20210822 21:00:51.208" endtime="20210822 21:00:55.339"/>
+<status status="FAIL" starttime="20210822 21:35:13.067" endtime="20210822 21:35:41.381"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">temp</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="5" fail="1" skip="0" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20210822 21:35:24.047" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
 </errors>
 </robot>
