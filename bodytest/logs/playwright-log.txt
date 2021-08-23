@@ -1,11 +1,11 @@
-{"level":30,"time":"2021-08-16T16:33:07.690Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Listening on 59643"}
-{"level":30,"time":"2021-08-16T16:33:08.021Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-08-16T16:33:08.033Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
-{"level":30,"time":"2021-08-16T16:33:08.214Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
-{"level":30,"time":"2021-08-16T16:33:08.214Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
-{"level":30,"time":"2021-08-16T16:33:12.585Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
-{"level":30,"time":"2021-08-16T16:33:12.585Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
-{"level":30,"time":"2021-08-16T16:33:12.586Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
-{"level":30,"time":"2021-08-16T16:33:12.608Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
-{"level":30,"time":"2021-08-16T16:33:12.608Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
-{"level":30,"time":"2021-08-16T16:33:12.608Z","pid":23126,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:00:51.716Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Listening on 54257"}
+{"level":30,"time":"2021-08-23T00:00:52.150Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-08-23T00:00:52.161Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:00:52.373Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Video path: undefined"}
+{"level":30,"time":"2021-08-23T00:00:52.381Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:00:55.226Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:00:55.226Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:00:55.226Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
+{"level":30,"time":"2021-08-23T00:00:55.264Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active context"}
+{"level":30,"time":"2021-08-23T00:00:55.264Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changing current active page"}
+{"level":30,"time":"2021-08-23T00:00:55.264Z","pid":19046,"hostname":"susana-Inspiron-5566","msg":"Changed active page"}
